@@ -1,0 +1,64 @@
+.project-item-container {
+    cursor: pointer;
+    line-height: 1.25;
+    padding: 5px 0;
+    width: fit-content;
+}
+
+.project-item-container .title-item {
+    position: relative;
+}
+
+.project-item-container img {
+    position: fixed;
+    left: 45vw;
+    top: 30vh;
+    width: auto;
+    height: clamp(200px, 20vw, 20vw);
+    object-fit: cover;
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menu-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 8.5vw;
+    text-transform: lowercase;
+    z-index: 1;
+    line-height: 1.1;
+    width: fit-content;
+}
+
+.info-block {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70vw;
+    z-index: 1;
+    text-align: left;
+    font-size: 20px;
+}
+
+.info-block-header {
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.info-block-header span {
+    display: flex;
+    align-items: center;
+}
+
+.info-block p {
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: #999;
+}
+
+.info-block p span {
+    display: block;
+    transition: all .25s ease-in-out;
+    opacity: 0;
+}
